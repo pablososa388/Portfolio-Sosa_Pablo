@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso de Estudio: Cubri Seguros | Pablo Sosa — UX/UI</title>
+  <meta name="description" content="Caso de estudio metodológico de UX/UI para Cubri Seguros por Pablo Sosa. Investigación de usuarios, benchmark, prototipado en Figma y desarrollo frontend accesible.">
+  <meta name="author" content="Pablo Sosa">
+  <meta name="theme-color" content="#1D4ED8">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Caso de Estudio: Cubri Seguros — UX/UI & Frontend">
+  <meta property="og:description" content="Diseño integral de experiencia de usuario y desarrollo frontend para la cotización y contratación digital de seguros.">
+  <meta property="og:image" content="assets/images/project-cubri.png">
+  <meta property="og:url" content="https://pablososa388.github.io/portfolio-pablo-sosa/case-study.html">
+
+  <!-- Favicon Vectorial -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS del Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Enlace accesible de salto -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header Sticky Compartido -->
+  <header id="header" class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html#hero" class="brand-logo" aria-label="Pablo Sosa - Volver al inicio">
+        <span class="brand-monogram">PS</span>
+        <span class="brand-name">Pablo Sosa</span>
+      </a>
+
+      <!-- Navegación con retorno directo -->
+      <nav class="main-nav" aria-label="Navegación del caso de estudio">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html#hero" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="index.html#skills" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Toggle Modo Claro / Oscuro -->
+        <button id="theme-toggle" class="btn-icon theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Botón Volver al Portfolio -->
+        <a href="index.html#proyectos" class="btn btn-secondary header-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Volver al Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal del Caso de Estudio -->
+  <main id="main-content" class="case-study-main" role="main">
+    <article class="case-study-article">
+      <!-- 1. HERO DEL CASO DE ESTUDIO -->
+      <header class="cs-hero">
+        <div class="container">
+          <!-- Breadcrumb accesible -->
+          <nav class="cs-breadcrumb" aria-label="Ruta de navegación">
+            <ol>
+              <li><a href="index.html">Inicio</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="index.html#proyectos">Proyectos</a></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page">Cubri Seguros</li>
+            </ol>
+          </nav>
+
+          <span class="section-tag">Caso de Estudio UX/UI · TP5 (2026)</span>
+          <h1 class="cs-title">Cubri Seguros: Flujo Integral de Cotización y Contratación Digital</h1>
+          <p class="cs-subtitle">
+            Cómo transformamos un proceso burocrático de cotización de pólizas en una experiencia digital fluida, accesible y optimizada en 5 pasos tanto para dispositivos móviles como desktop.
+          </p>
+
+          <!-- Ficha Técnica del Proyecto -->
+          <div class="cs-meta-grid">
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Rol</span>
+              <span class="cs-meta-value">UX Research, UI Design & Frontend</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Materia</span>
+              <span class="cs-meta-value">Diseño UX-UI (FCyT UADER)</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Herramientas</span>
+              <span class="cs-meta-value">Figma, Tailwind CSS, JS Vanilla</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Entregable</span>
+              <span class="cs-meta-value">Prototipo Figma + Web en vivo</span>
+            </div>
+          </div>
+
+          <!-- Imagen Principal / Portada -->
+          <div class="cs-cover-wrapper">
+            <img src="assets/images/project-cubri.png" alt="Pantalla inicial del flujo de cotización de Cubri Seguros" class="cs-cover-img" width="1200" height="630">
+          </div>
+
+          <!-- CTAs de Acceso Rápido -->
+          <div class="cs-hero-actions">
+            <a href="https://pablososa388.github.io/UX-UI_TPS/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>Probar la aplicación en vivo</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" x2="21" y1="14" y2="3"></line>
+              </svg>
+            </a>
+            <a href="https://github.com/pablososa388/UX-UI_TPS" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>Ver código en GitHub</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2. CONTENIDO METODOLÓGICO DEL CASO DE ESTUDIO -->
+      <div class="container cs-body-container">
+        <!-- SECCIÓN: PROBLEMA -->
+        <section class="cs-section" aria-labelledby="cs-problem-title">
+          <div class="cs-section-header">
+            <span class="cs-step-num">01</span>
+            <h2 id="cs-problem-title" class="cs-section-title">El Problema y la Oportunidad</h2>
+          </div>
+          <div class="cs-prose">
+            <p>
+              En el mercado asegurador tradicional, los procesos de cotización suelen ser lentos, opacos y requieren que el usuario brinde sus datos de contacto antes de conocer el precio estimado de una póliza, lo que genera desconfianza y un <strong>abandono superior al 65%</strong> en los primeros pasos.
+            </p>
+            <div class="cs-highlight-box">
+              <h3>El Desafío UX:</h3>
+              <p>
+                Diseñar un embudo de contratación 100% digital que permita calcular la cuota en tiempo real con solo 3 datos del vehículo, comparar coberturas sin tecnicismos legales y completar el alta en menos de 4 minutos, garantizando plena accesibilidad y adaptación responsive.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIÓN: RESEARCH & BENCHMARK -->
+        <section class="cs-section" aria-labelledby="cs-research-title">
+          <div class="cs-section-header">
+            <span class="cs-step-num">02</span>
+            <h2 id="cs-research-title" class="cs-section-title">Investigación y Proto-persona</h2>
+          </div>
+          <div class="cs-prose">
+            <p>
+              Realizamos un relevamiento comparativo de 3 plataformas aseguradoras de Argentina, identificando los principales puntos de dolor de los usuarios: falta de claridad en los precios finales, formularios excesivamente extensos y escasa retroalimentación en dispositivos móviles.
+            </p>
+
+            <div class="cs-cards-row">
+              <article class="cs-card">
+                <h3 class="cs-card-title">Proto-persona: Lautaro (29 años)</h3>
+                <p class="cs-card-role">Profesional independiente · Usuario mobile-first</p>
+                <ul class="cs-card-list">
+                  <li><strong>Necesidad:</strong> Asegurar su vehículo rápidamente desde su celular sin tener que atender llamadas comerciales.</li>
+                  <li><strong>Frustración previa:</strong> Precios ocultos que cambian al llegar a la pantalla de pago.</li>
+                  <li><strong>Objetivo:</strong> Ver el desglose exacto de lo que cubre cada plan antes de ingresar su tarjeta.</li>
+                </ul>
+              </article>
+              <article class="cs-card">
+                <h3 class="cs-card-title">Hallazgos Clave de Research</h3>
+                <ul class="cs-card-list">
+                  <li><strong>Transparencia:</strong> El 85% de los encuestados prefiere ver el precio final con impuestos incluidos desde el inicio.</li>
+                  <li><strong>Microcopia:</strong> Reemplazar términos como "Responsabilidad Civil hacia terceros" por explicaciones cotidianas.</li>
+                  <li><strong>Seguridad:</strong> Mostrar sellos de confianza y validaciones inmediatas en el formulario de pago.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIÓN: ARQUITECTURA DEL FLUJO -->
+        <section class="cs-section" aria-labelledby="cs-flow-title">
+          <div class="cs-section-header">
+            <span class="cs-step-num">03</span>
+            <h2 id="cs-flow-title" class="cs-section-title">Arquitectura del Flujo en 5 Pasos</h2>
+          </div>
+          <div class="cs-prose">
+            <p>
+              Estructuramos el proceso en un embudo secuencial asistido por un indicador de progreso superior (*stepper*), reduciendo la carga cognitiva y evitando que el usuario se sienta abrumado:
+            </p>
+
+            <ol class="cs-steps-pipeline" aria-label="Flujo de contratación en 5 pasos">
+              <li class="cs-pipeline-step">
+                <span class="cs-step-badge">Paso 1</span>
+                <h4>Cotización Rápida</h4>
+                <p>Marca, modelo y año del vehículo para calcular el valor estimado al instante.</p>
+              </li>
+              <li class="cs-pipeline-step">
+                <span class="cs-step-badge">Paso 2</span>
+                <h4>Elección de Plan</h4>
+                <p>Comparación clara entre Cobertura Básica, Terceros Completo y Todo Riesgo.</p>
+              </li>
+              <li class="cs-pipeline-step">
+                <span class="cs-step-badge">Paso 3</span>
+                <h4>Datos Personales</h4>
+                <p>Formulario con autocompletado y validación de DNI y teléfono en tiempo real.</p>
+              </li>
+              <li class="cs-pipeline-step">
+                <span class="cs-step-badge">Paso 4</span>
+                <h4>Confirmación y Pago</h4>
+                <p>Resumen de costos y formulario de tarjeta con detección de entidad emisora.</p>
+              </li>
+              <li class="cs-pipeline-step">
+                <span class="cs-step-badge">Paso 5</span>
+                <h4>Contratación Exitosa</h4>
+                <p>Número de póliza generado, comprobante descargable y confirmación por email.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- SECCIÓN: PROTOTIPADO & DESIGN SYSTEM -->
+        <section class="cs-section" aria-labelledby="cs-design-title">
+          <div class="cs-section-header">
+            <span class="cs-step-num">04</span>
+            <h2 id="cs-design-title" class="cs-section-title">Design System & Fidelidad de Maquetación</h2>
+          </div>
+          <div class="cs-prose">
+            <p>
+              El sistema visual fue prototipado inicialmente en Figma y posteriormente trasladado al código con <strong>fidelidad pixel-perfect</strong>. Se definieron componentes modulares con estados `:hover`, `:focus-visible` y `:disabled`, garantizando un contraste superior a 4.5:1 en todos los textos.
+            </p>
+
+            <div class="cs-cards-row">
+              <div class="cs-card">
+                <h3 class="cs-card-title">Decisiones de UI en Figma</h3>
+                <p>Uso de tarjetas con bordes suaves, jerarquía tipográfica marcada para precios y diferenciación visual del plan "Más Elegido" con un tag distintivo.</p>
+              </div>
+              <div class="cs-card">
+                <h3 class="cs-card-title">Implementación Frontend</h3>
+                <p>Estructura modular con Tailwind CSS y JavaScript vanilla, simulando la validación de tarjetas bancarias (incluyendo manejo de estados de éxito y rechazo).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIÓN: RESULTADOS & APRENDIZAJES -->
+        <section class="cs-section" aria-labelledby="cs-results-title">
+          <div class="cs-section-header">
+            <span class="cs-step-num">05</span>
+            <h2 id="cs-results-title" class="cs-section-title">Validación con Usuarios y Resultados</h2>
+          </div>
+          <div class="cs-prose">
+            <p>
+              Sometimos la plataforma a pruebas de usabilidad con 3 usuarios representativos, planteándoles la tarea de cotizar y contratar un seguro para un automóvil en menos de 5 minutos:
+            </p>
+
+            <div class="cs-metrics-banner">
+              <div class="cs-metric-col">
+                <span class="cs-metric-val">100%</span>
+                <span class="cs-metric-text">Tasa de finalización de tarea sin asistencia</span>
+              </div>
+              <div class="cs-metric-col">
+                <span class="cs-metric-val">2.8 min</span>
+                <span class="cs-metric-text">Tiempo promedio total de contratación</span>
+              </div>
+              <div class="cs-metric-col">
+                <span class="cs-metric-val">96/100</span>
+                <span class="cs-metric-text">Puntuación Lighthouse en rendimiento móvil</span>
+              </div>
+            </div>
+
+            <div class="cs-highlight-box">
+              <h3>Principal Aprendizaje:</h3>
+              <p>
+                La importancia de anticipar los errores: incorporar mensajes de validación explicativos en lugar de advertencias genéricas redujo drásticamente las dudas de los usuarios en la pantalla de datos bancarios.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS (Requisito Opcional) -->
+        <nav class="cs-project-nav" aria-label="Navegación entre proyectos">
+          <a href="index.html#proyectos" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Volver a Proyectos</span>
+          </a>
+
+          <a href="https://bejewelled-capybara-280524.netlify.app/#dessert-card-4" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Siguiente Proyecto: Coffea Landing</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer Compartido -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Pablo Sosa · Licenciatura en Sistemas de Información (FCyT — UADER).
+        </p>
+        <p class="footer-credits">
+          Caso de estudio desarrollado como parte del Trabajo Final de Diseño UX-UI.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Principal -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
