@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Página no encontrada | Pablo Sosa</title>
+  <meta name="description" content="Página no encontrada en el portfolio de Pablo Sosa. Regresá al inicio para explorar los proyectos, habilidades y formación académica.">
+  <meta name="author" content="Pablo Sosa">
+  <meta name="theme-color" content="#1D4ED8">
+
+  <!-- Favicon Vectorial -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS del Design System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="error-page-body">
+  <!-- Enlace accesible de salto -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header Mínimo y Accesible -->
+  <header id="header" class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html#hero" class="brand-logo" aria-label="Pablo Sosa - Ir al inicio">
+        <span class="brand-monogram">PS</span>
+        <span class="brand-name">Pablo Sosa</span>
+      </a>
+
+      <div class="header-actions">
+        <!-- Toggle Modo Claro / Oscuro -->
+        <button id="theme-toggle" class="btn-icon theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <a href="index.html" class="btn btn-secondary header-cta">
+          <span>Volver al Inicio</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Central 404 -->
+  <main id="main-content" class="error-main" role="main">
+    <div class="container error-container">
+      <div class="error-content">
+        <span class="section-tag error-tag">Error de Enlace</span>
+        
+        <div class="error-number-wrapper" aria-hidden="true">
+          <span class="error-number">404</span>
+        </div>
+
+        <h1 class="error-title">Página no encontrada</h1>
+        
+        <p class="error-description">
+          La dirección a la que intentás ingresar no existe, fue eliminada o cambió de ruta. Pero no te preocupes, podés volver al portfolio principal o navegar a las secciones destacadas.
+        </p>
+
+        <!-- Accesos directos para recuperación del usuario -->
+        <div class="error-actions">
+          <a href="index.html#hero" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <span>Ir a la página principal</span>
+          </a>
+
+          <a href="index.html#proyectos" class="btn btn-secondary">
+            <span>Ver proyectos</span>
+          </a>
+
+          <a href="index.html#contacto" class="btn btn-secondary">
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Compartido -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Pablo Sosa · Licenciatura en Sistemas de Información (FCyT — UADER).
+        </p>
+        <p class="footer-credits">
+          Página de error 404 personalizada con accesibilidad WCAG 2.2 AA.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Principal -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
