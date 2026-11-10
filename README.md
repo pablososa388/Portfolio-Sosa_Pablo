@@ -14,7 +14,7 @@
 - **Repositorio oficial en GitHub:** [https://github.com/pablososa388/Portfolio-Sosa_Pablo](https://github.com/pablososa388/Portfolio-Sosa_Pablo)
 - **Caso de Estudio Dedicado:** [Ver Caso de Estudio de Cubri Seguros](case-study.html)
 - **Analítico de Materias (Oficial SIU Guaraní):** [Descargar Analítico Académico (PDF)](assets/docs/analitico.pdf)
-- **Mobile lighthouse (screen de rendimiento):** [https://github.com/pablososa388/Portfolio-Sosa_Pablo/blob/main/assets/images/mobile_lighthouse.png] (assets/docs/images/mobile_lighthouse.png)
+- **Mobile Lighthouse (screen de rendimiento):** [Ver captura de Lighthouse](assets/images/mobile_lighthouse.png)
 
 ---
 
