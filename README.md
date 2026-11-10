@@ -9,9 +9,9 @@
 
 ## 📌 Enlaces del Proyecto
 
-- **Sitio web desplegado (URL pública con HTTPS):** [https://pablososa388.github.io/portfolio-pablo-sosa/](https://pablososa388.github.io/portfolio-pablo-sosa/)
+- **Sitio web desplegado (URL pública con HTTPS):** [https://pablososa388.github.io/Portfolio-Sosa_Pablo/](https://pablososa388.github.io/Portfolio-Sosa_Pablo/)
 - **Prototipo y Diseño en Figma:** [Ver archivo en Figma (OpenArt & UI Kit)](https://www.figma.com/design/EhKpbNKNmI9dD0DaENZEdz/OpenArt---Design?node-id=0-1&p=f&t=xrZcFD4WN9RypSKj-0)
-- **Repositorio oficial en GitHub:** [https://github.com/pablososa388/portfolio-pablo-sosa](https://github.com/pablososa388/portfolio-pablo-sosa)
+- **Repositorio oficial en GitHub:** [https://github.com/pablososa388/Portfolio-Sosa_Pablo](https://github.com/pablososa388/Portfolio-Sosa_Pablo)
 - **Caso de Estudio Dedicado:** [Ver Caso de Estudio de Cubri Seguros](case-study.html)
 - **Analítico de Materias (Oficial SIU Guaraní):** [Descargar Analítico Académico (PDF)](assets/docs/analitico.pdf)
 
