@@ -609,11 +609,197 @@
         </div>
       </div>
     </section>
+    <!-- ======================================================================
+         SECCIÓN 8: CONTACTO (Con formulario funcional - Bonus)
+         ====================================================================== -->
+    <section id="contacto" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <!-- Bloque Destacado de Contacto -->
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-tag">Contacto</span>
+            <h2 id="contact-title" class="section-title">Hablemos de nuevos proyectos</h2>
+            <p class="section-desc">
+              ¿Tenés alguna consulta, propuesta de colaboración o proyecto en mente? Escribime directamente a mis canales o completá el siguiente formulario.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Columna de Canales Directos -->
+            <div class="contact-channels">
+              <h3 class="contact-subtitle">Canales directos</h3>
+
+              <ul class="contact-list" aria-label="Canales directos de contacto">
+                <!-- Email Directo -->
+                <li class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </div>
+                  <div class="contact-item-info">
+                    <span class="contact-label">Correo Electrónico</span>
+                    <a href="mailto:pablososa95.ps95@gmail.com" class="contact-link">
+                      pablososa95.ps95@gmail.com
+                    </a>
+                  </div>
+                </li>
+
+                <!-- LinkedIn -->
+                <li class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                      <rect width="4" height="12" x="2" y="9"/>
+                      <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                  </div>
+                  <div class="contact-item-info">
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/pablo-jos%C3%A9-sosa-23122a34b/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                      Pablo José Sosa
+                    </a>
+                  </div>
+                </li>
+
+                <!-- GitHub -->
+                <li class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                      <path d="M9 18c-4.51 2-5-2-7-2"/>
+                    </svg>
+                  </div>
+                  <div class="contact-item-info">
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/pablososa388" target="_blank" rel="noopener noreferrer" class="contact-link">
+                      github.com/pablososa388
+                    </a>
+                  </div>
+                </li>
+
+                <!-- Ubicación -->
+                <li class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div class="contact-item-info">
+                    <span class="contact-label">Ubicación y Zona Horaria</span>
+                    <span class="contact-text">Colón, Entre Ríos, Argentina (GMT-3)</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Formulario Funcional (Bonus) -->
+            <div class="contact-form-wrapper">
+              <h3 class="contact-subtitle">Enviame un mensaje</h3>
+              <form id="contact-form" class="contact-form" action="https://formspree.io/f/pablososa95.ps95@gmail.com" method="POST" novalidate>
+                <!-- Campo Nombre -->
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Nombre y Apellido <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name">
+                  <span class="form-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Campo Email -->
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Correo Electrónico <span class="required" aria-hidden="true">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="tu.email@ejemplo.com" required autocomplete="email">
+                  <span class="form-error" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Campo Asunto -->
+                <div class="form-group">
+                  <label for="form-subject" class="form-label">Asunto</label>
+                  <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Motivo del contacto">
+                </div>
+
+                <!-- Campo Mensaje -->
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Mensaje <span class="required" aria-hidden="true">*</span></label>
+                  <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                  <span class="form-error" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                  <span>Enviar mensaje</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                </button>
+                <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer del Sitio -->
+  <!-- ======================================================================
+       SECCIÓN 9: FOOTER
+       ====================================================================== -->
   <footer id="footer" class="site-footer" role="contentinfo">
-    <!-- Se completará en el commit correspondiente -->
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Logo y Monograma -->
+        <a href="#hero" class="brand-logo footer-brand" aria-label="Pablo Sosa - Ir al inicio">
+          <span class="brand-monogram">PS</span>
+          <span class="brand-name">Pablo Sosa</span>
+        </a>
+
+        <!-- Navegación Secundaria Repetida -->
+        <nav class="footer-nav" aria-label="Navegación secundaria del pie de página">
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-link">Inicio</a></li>
+            <li><a href="#skills" class="footer-nav-link">Habilidades</a></li>
+            <li><a href="#proyectos" class="footer-nav-link">Proyectos</a></li>
+            <li><a href="#experiencia" class="footer-nav-link">Experiencia</a></li>
+            <li><a href="#sobre-mi" class="footer-nav-link">Sobre mí</a></li>
+            <li><a href="#contacto" class="footer-nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Redes Sociales -->
+        <div class="footer-social" aria-label="Enlaces a redes sociales">
+          <a href="https://github.com/pablososa388" target="_blank" rel="noopener noreferrer" class="btn-icon footer-social-link" aria-label="GitHub de Pablo Sosa (abre en pestaña nueva)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/pablo-jos%C3%A9-sosa-23122a34b/" target="_blank" rel="noopener noreferrer" class="btn-icon footer-social-link" aria-label="LinkedIn de Pablo Sosa (abre en pestaña nueva)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect width="4" height="12" x="2" y="9"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="mailto:pablososa95.ps95@gmail.com" class="btn-icon footer-social-link" aria-label="Enviar correo a Pablo Sosa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Pablo Sosa · Licenciatura en Sistemas de Información (FCyT — UADER). Todos los derechos reservados.
+        </p>
+        <p class="footer-credits">
+          Desarrollado con HTML5 semántico y CSS3 moderno puro · Accesibilidad WCAG 2.2 AA.
+        </p>
+      </div>
+    </div>
   </footer>
 
   <!-- Script principal de interactividad -->

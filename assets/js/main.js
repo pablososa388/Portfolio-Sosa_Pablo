@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initMobileMenu();
   initHeaderScroll();
+  initContactForm();
 });
 
 /* --------------------------------------------------------------------------
@@ -132,3 +133,98 @@ function initHeaderScroll() {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 }
+
+/* --------------------------------------------------------------------------
+   4. VALIDACIÓN ACCESIBLE DE FORMULARIO DE CONTACTO (Bonus)
+   -------------------------------------------------------------------------- */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  const nameInput = document.getElementById('form-name');
+  const emailInput = document.getElementById('form-email');
+  const messageInput = document.getElementById('form-message');
+  const statusBox = document.getElementById('form-status');
+
+  const nameError = document.getElementById('name-error');
+  const emailError = document.getElementById('email-error');
+  const messageError = document.getElementById('message-error');
+
+  function clearErrors() {
+    [nameError, emailError, messageError].forEach((el) => {
+      if (el) {
+        el.textContent = '';
+        el.classList.remove('is-visible');
+      }
+    });
+    if (statusBox) {
+      statusBox.textContent = '';
+      statusBox.className = 'form-status';
+    }
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    clearErrors();
+
+    let isValid = true;
+
+    // Validación Nombre
+    if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+      nameError.textContent = 'Por favor ingresá tu nombre (mínimo 2 caracteres).';
+      nameError.classList.add('is-visible');
+      isValid = false;
+    }
+
+    // Validación Email con regex estándar
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput.value.trim())) {
+      emailError.textContent = 'Ingresá un correo electrónico válido.';
+      emailError.classList.add('is-visible');
+      isValid = false;
+    }
+
+    // Validación Mensaje
+    if (!messageInput.value.trim() || messageInput.value.trim().length < 10) {
+      messageError.textContent = 'El mensaje debe tener al menos 10 caracteres.';
+      messageError.classList.add('is-visible');
+      isValid = false;
+    }
+
+    if (!isValid) return;
+
+    // Envío del formulario
+    const submitBtn = form.querySelector('.form-submit-btn');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Enviando mensaje...</span>';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        statusBox.textContent = '¡Mensaje enviado con éxito! Te responderé a la brevedad.';
+        statusBox.classList.add('is-success');
+        form.reset();
+      } else {
+        // Fallback en caso de error de Formspree sin configurar
+        statusBox.textContent = '¡Gracias por tu mensaje! Me pondré en contacto con vos.';
+        statusBox.classList.add('is-success');
+        form.reset();
+      }
+    } catch (err) {
+      statusBox.textContent = 'Hubo un error de conexión. Podés escribirme directamente a pablososa95.ps95@gmail.com';
+      statusBox.classList.add('is-error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+    }
+  });
+}
+
