@@ -103,6 +103,19 @@ El repositorio cuenta con un historial granular y descriptivo de commits en la r
 
 ---
 
+## 📚 Test de compañeros: 
+
+- **Huck Mirko:** bastante facil de entender donde está cada cosa, ordenado.
+- **Arrieta Joel:** parece que anda, no saltaron errores dejalo asi.
+- **Cabrera Emanuel:** lo único que le cambiaría es la fuente en modo claro.
+- **Aclaración**: no le cambié la fuente, no me pareció malo el contraste y como solo 1 de 3 lo mencionó lo descarté.
+ 
+
+
+
+---
+---
+
 ## 📚 Créditos y Referencias
 
 - **Portfolio de Referencia Cátedra:** Mg. Ernesto Ledesma (*ernesto-ledesma-portfolio.vercel.app*).
