@@ -99,3 +99,4 @@ En cumplimiento con las sugerencias de la cátedra de Diseño UX-UI sobre el uso
 - **Herramientas utilizadas:** Asistente de IA (Antigravity / Gemini) como soporte de pair programming y estructuración inicial de código HTML/CSS semántico.
 - **Alcance:** Generación de estructuras base de accesibilidad (atributos ARIA, cálculo de contrastes WCAG AA) y sugerencias de modularización en CSS puro.
 - **Revisión y autoría:** Todo el código, contenido personal, métricas, proyectos, textos descriptivos y decisiones de diseño fueron revisados, adaptados, validados y ajustados manualmente por el alumno para reflejar su perfil e identidad personal.
+
